@@ -1,0 +1,23 @@
+body {
+   background-color: grey;
+}
+main, form {
+    margin: auto;
+    text-align: center;
+
+}
+img {
+    width: 80%;
+}
+
+#maininput {
+    width: 80%;
+    margin: 1em;
+}
+#history {
+    width: 80%;
+    height: 10em;
+    border: 5px solid red;
+    margin: auto;
+    background-color: white;
+}

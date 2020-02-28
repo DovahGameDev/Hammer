@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="utf-8">
+    <title>Hammer</title>
+    <link rel="stylesheet" href="hammercss.css">
+    <script src="cmd.js"></script>
+</head>
+
+<body>
+    <main>
+        <header>
+          <h1>Wine Cellar</h1>
+        </header>
+        <img src="download.jpg" alt="wineceller">
+    </main>
+    <footer>
+
+      <form name="commandform" onsubmit="return executecmd()">
+            <textarea name="history" id="history" value=""disabled></textarea>
+            <hr />
+            <input type="text" id="maininput" name="maininput" value=""/>
+            <br />
+            <input type="submit" id="entercommand" name="entercommand"/>
+      </form>
+
+    </footer>
+</body>
+
+</html>
