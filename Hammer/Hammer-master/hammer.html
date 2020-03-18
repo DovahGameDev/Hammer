@@ -2,27 +2,40 @@
 <html lang="en" dir="ltr">
 <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Hammer</title>
     <link rel="stylesheet" href="hammercss.css">
-    <script src="cmd.js"></script>
+    <script language="javascript" type="text/javascript" src="cmd.js"></script>
+    <script language="javascript" type="text/javascript" src="hammerRecords.js"></script>
 </head>
 
-<body>
+<body onload="displayPlayerStats();">
     <main>
         <header>
           <h1>Wine Cellar</h1>
         </header>
-        <img src="download.jpg" alt="wineceller">
-    </main>
-    <footer>
+        <div id="infoscreens">
+          <div id="charactersheet">
+            <ul>
+            </ul>
+          </div>
+          <div id="offset">
+          </div>
+          <img src="download.jpg" alt="wineceller" />
 
-      <form name="commandform" onsubmit="return executecmd()">
-            <textarea name="history" id="history" value=""disabled></textarea>
+        </div>
+
+    </main>
+
+    <footer>
+      <div id="history"></div>
+      <form name="commandform" onsubmit="return executecmd();">
             <hr />
             <input type="text" id="maininput" name="maininput" value=""/>
             <br />
             <input type="submit" id="entercommand" name="entercommand"/>
       </form>
+
 
     </footer>
 </body>

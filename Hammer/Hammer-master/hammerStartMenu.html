@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="utf-8">
+    <title>Hammer</title>
+    <link rel="stylesheet" href="hammercss.css">
+    <script language="javascript" type="text/javascript" src="cmd.js"></script>
+    <script language="javascript" type="text/javascript" src="hammerRecords.js"></script>
+</head>
+
+<body>
+    <main class="menu">
+      <div id="startscreen">
+        <form name="startmenu" id="startmenu">
+            <input type="button" name="newgame" id="newgame" value="New Game" onclick="return startGame();">
+        </form>
+                      <!-- action='hammer.html' -->
+        <form name='entername'
+              id='entername'
+              action='hammer.html'
+              onsubmit='return createPlayer();' hidden>
+          <label for='enteryourname'>Enter your character name</label>
+          <br />
+          <input type='text' name='enteryourname' id='enteryourname'>
+          <input type='submit' value='Finalize'>
+        </form>
+      </div>
+
+    </main>
+    <footer>
+    </footer>
+</body>
+
+</html>

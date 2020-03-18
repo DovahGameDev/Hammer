@@ -1,23 +1,62 @@
 body {
    background-color: grey;
+   height: 0;
+   padding-bottom: 75%; /* 16:9 */
+    position: relative;
+   /*border: 10px solid crimson;*/
+
 }
-main, form {
-    margin: auto;
+header {
+    size: 20vmax;
+}
+form, header {
     text-align: center;
-
+    clear: both;
+    margin: auto;
+    font-size: 3vmin;
 }
+
 img {
-    width: 80%;
-}
+    width: 60vw;
+    height: 50vh;
+    margin: auto;
+    display: block;
 
+
+}
+#offset {
+    width: 13vw;
+    height: 20vh;
+    float: right;
+    border: .5vmin solid blue;
+    opacity: 0;
+    margin-right: 2vmin;
+}
+#charactersheet {
+    float: left;
+    height: 20vh;
+    border: .5vmin dotted blue;
+    width: 13vw;
+    background-color: white;
+    margin-left: 2vmin;
+}
+#entercommand {
+    margin: 2vmin;
+
+    font-size: 3vmin;
+    size: 10vmin;
+}
 #maininput {
-    width: 80%;
-    margin: 1em;
+    width: 70vw;
+    margin: auto;
 }
 #history {
-    width: 80%;
-    height: 10em;
+    width: 70vw;
     border: 5px solid red;
-    margin: auto;
+    margin: 1vmin auto;
+    height: 15vh;
     background-color: white;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    position: relative;
 }
